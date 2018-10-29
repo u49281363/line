@@ -15,7 +15,7 @@ $arrayHeader = array();
     $arrayHeader[] = "Authorization: Bearer {$accessToken}";
     
     //รับข้อความจากผู้ใช้
-    $messageInput = $arrayJson['events'][0]['message']['text'];
+    $messageInput = $events['events'][0]['message']['text'];
 
 
 
