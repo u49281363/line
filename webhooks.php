@@ -9,6 +9,16 @@ $access_token = 'TcPY8ZGaFaIo9WIvLi1A6A60s9ul6a1vKez2mTW9hJG/WNHXyrjm/yOawEQg8uy
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
+
+$arrayHeader = array();
+    $arrayHeader[] = "Content-Type: application/json";
+    $arrayHeader[] = "Authorization: Bearer {$accessToken}";
+    
+    //รับข้อความจากผู้ใช้
+    $messageInput = $arrayJson['events'][0]['message']['text'];
+
+
+
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -23,7 +33,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'มหาวิทยาลัยพะเยา'
+				'text' => $messageInput
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
