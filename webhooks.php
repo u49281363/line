@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
 			{
 			$messages = [
 				'type' => 'text',
-				'text' => 'www.dsa.up.ac.th/'.$messageInput
+				'text' => 'www.dsa.up.ac.th/'.$userId
 			];
 			}
 			else
