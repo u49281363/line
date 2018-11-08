@@ -8,8 +8,8 @@ $access_token = 'TcPY8ZGaFaIo9WIvLi1A6A60s9ul6a1vKez2mTW9hJG/WNHXyrjm/yOawEQg8uy
 
 $channelSecret = 'a206adcff0ab5fc50dc7693371569bdd';
 
-$pushID = $_POST['UID'];
-$MSG = $_POST['MSG'];
+$pushID = $_GET['UID'];
+$MSG = $_GET['MSG'];
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
