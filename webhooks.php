@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
 			{
 			$messages = [
 				'type' => 'text',
-				'text' => 'ลงทะเบียนเพื่อเชื่อมต่อ UP Alert ได้ที่ URL นี้ www.dsa.up.ac.th/'.$userId.' กรุณาอย่าเปิดเผย URL นี้ให้ผู้อื่นทราบ'
+				'text' => 'ลงทะเบียนเพื่อเชื่อมต่อ DSA Connect โดยแจ้ง ID : '.$userId.' แก่ผู้ดูแลระบบเท่านั้น กรุณาอย่าเปิดเผย URL นี้ให้ผู้อื่นทราบ'
 			];
 			}
 			else
