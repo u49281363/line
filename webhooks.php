@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
 			{
 			$messages = [
 				'type' => 'text',
-				'text' => 'ลงทะเบียนเพื่อเชื่อมต่อ DSA Connect คลิกลิงค์นี้ : http://www.iservice.up.ac.th/oth/line.php?UID='.$userId.' เพื่อลงทะเบียน'
+				'text' => 'ลงทะเบียนเพื่อเชื่อมต่อ DSA Connect คลิกลิงค์นี้ : http://www.iservice.up.ac.th/LINE/index.php?UID='.$userId.' เพื่อลงทะเบียน'
 			];
 			}
 			else
